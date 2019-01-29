@@ -3,10 +3,12 @@ html
   head
     meta(charset='UTF-8')
     title=title
-    link(rel='stylesheet', href='semantic/dist/semantic.min.css')
-    link(rel='stylesheet', href='stylesheets/style.css')
-  body
+    link(rel='stylesheet', href='/semantic/dist/semantic.min.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+  body(ng-app="app")
     block content
 
     block javascripts
-      script(src="angular/angular.min.js")
+      script(src="/angular/angular.min.js")
+      script(src="/javascripts/main.js")
+      script(src="/javascripts/indexController.js")
